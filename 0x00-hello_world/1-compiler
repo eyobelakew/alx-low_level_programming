@@ -1,7 +1,3 @@
 #!/bin/bash
-
-# Get the file name without the extension
 FILE_NAME=${CFILE%.*}
-
-# Compile the C file and create an object file
-gcc -c "$CFILE" -o "$FILE_NAME.o"
+gcc -c "$CFILE" -o "${FILE_NAME%.*}.o"
