@@ -1,3 +1,2 @@
 #!/bin/bash
-FILE_NAME=${CFILE%.*}
 gcc -c "$CFILE" -o "${FILE_NAME%.*}.o"
