@@ -1,8 +1,3 @@
-/*
- * File: 100-times_table.c
- * Auth: Wendimu S Tarekegn
- */
-
 #include "main.h"
 
 /**

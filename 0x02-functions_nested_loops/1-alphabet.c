@@ -1,8 +1,3 @@
-/*
- * File: 1-alphabet.c
- * Author: Wendimu S. Tarekegn
- */
-
 #include "main.h"
 
 /**

@@ -1,8 +1,3 @@
-/*
- * File: 5-sign.c
- * Author: Wendimu S Tarekegn
- */
-
 #include "main.h"
 
 /**

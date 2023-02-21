@@ -1,9 +1,4 @@
 #include <stdio.h>
-/*
- * File: 0-putchar.c
- * Author: Wendimu S. Tarekegn
- */
-
 #include "main.h"
 
 /**

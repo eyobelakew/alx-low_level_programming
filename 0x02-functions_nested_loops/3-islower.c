@@ -1,8 +1,3 @@
-/*
- * File: 3-islower.c
- * Author: Wendimu S Tarekegn
- */
-
 #include "main.h"
 
 /**

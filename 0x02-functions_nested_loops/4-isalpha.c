@@ -1,8 +1,3 @@
-/*
- * File: 4-isalpha.c
- * Author: Wendimu S. Tarekegn
- */
-
 #include "main.h"
 
 /**
