@@ -1,9 +1,9 @@
 /*
  * File: 5-sign.c
- * Auth: Brennan D Baraban
+ * Author: Wendimu S Tarekegn
  */
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * print_sign - Prints the sign of a number.
