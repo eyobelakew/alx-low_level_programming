@@ -1,1 +1,1 @@
-Just new readme file
+This is a readme for 0x06
