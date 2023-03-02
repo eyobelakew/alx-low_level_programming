@@ -1,28 +1,28 @@
 #include "main.h"
-char *cap_string(char *cap)
+char *cap_string(char *str)
 {
-	int i, j;
+	int i;
+	int j;
+	char c[] = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
 
-	char sep[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?',
-		'"', '(', ')', '{', '}'};
+	i = 0;
 
-	for (i = 0; cap[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
-		if (i == 0 && cap[i] >= 'a' && cap[i] <= 'z')
-			cap[i] -= 32;
-
-		for (j = 0; j < 13; j++)
+		if (i == 0 && str[i] >= 97 && str[i] <= 122)
 		{
-			if (cap[i] == sep[j])
-			{
-				if (cap[i + 1] >= 'a' && cap[i + 1] <= 'z')
-				{
-					cap[i + 1] -= 32;
-				}
-			}
+			str[i] = str[i] - 32;
 		}
+		j = 0;
+		while (c[j] != '\0')
+		{
+			if (c[j] == str[i] && (str[i + 1] >= 97 && str[i + 1] <= 122))
+			{
+				str[i + 1] = str[i + 1] - 32;
+			}
+			j++;
+		}
+		i++;
 	}
-
-	return (cap);
-
+	return (str);
 }
