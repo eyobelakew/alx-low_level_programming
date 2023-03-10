@@ -1,1 +1,2 @@
-0x09
+this directory is not empty
+
