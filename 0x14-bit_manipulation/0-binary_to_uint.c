@@ -4,28 +4,32 @@
 /**
  * binary_to_uint - converts binary to decimal
  * @b: string of binary number
- *
- * Return: the converted number, or 0 if there is one or more chars in the
- * string b that is not 0 or 1, or if b is NULL.
+ * Return: the converted number, or 0 if not.
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int result = 0;
+int base = 1, i = 0, length = 0;
+unsigned int result = 0;
 
 	if (b == NULL)
 		return (0);
-
-	while (*b)
+	while (b[length] != '\0')
 	{
-		if (*b != '0' && *b != '1')
+		length++;
+	}
+	for (i = length - 1; i >= 0; i--)
+	{
+		if (b[i] == '0' || b[i] == '1')
+		{
+			if (b[i] == '1')
+			{
+				result += base;
+			}
+			base = base * 2;
+		}
+		else
 			return (0);
 
-		result <<= 1;
-		if (*b == '1')
-			result += 1;
-
-		b++;
 	}
-
-	return (result);
+		return (result);
 }
